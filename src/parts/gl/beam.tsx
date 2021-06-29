@@ -263,7 +263,13 @@ function BeamMain(props: BeamMainProps) {
   )
 
   const color = useMemo(() => {
-    return new Color(isSelected ? 'cyan' : isHovered ? 'magenta' : 'white')
+    return new Color(
+      isSelected
+        ? 'rgba(0, 63, 16, 0.3)'
+        : isHovered
+        ? 'rgba(0, 63, 16, 0.3)'
+        : 'white',
+    )
   }, [isSelected, isHovered])
 
   return (
@@ -362,7 +368,7 @@ function FirstHoleMarker(props: FirstHoleMarkerProps) {
 
   return (
     <group name="beam-first-hole-markers">
-      <meshBasicMaterial ref={materialRef} color="magenta" />
+      <meshBasicMaterial ref={materialRef} color="rgba(0, 63, 16, 0.3)" />
       <ringGeometry ref={geometryRef} args={[innerRadius, outerRadius]} />
       {/* top */}
       <mesh
@@ -522,7 +528,7 @@ function LengthArrow(props: LengthArrowProps) {
         position={position}
         direction={arrowAxis}
         length={beamWidth}
-        color="magenta"
+        color="rgba(0, 63, 16, 0.3)"
         headLength={(2 / 3) * beamWidth}
         headWidth={(1 / 2) * beamWidth}
         onPointerDown={handlePointerDown}

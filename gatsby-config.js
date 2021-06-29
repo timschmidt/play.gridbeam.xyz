@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gridcraft Sandbox',
-    description: 'Play with grid beams and panels, a minecraft for reality!',
+    title: 'Replimat Sandbox',
+    description: 'Play with Replimat and build real things!',
     author: 'Mikey Williams',
   },
   plugins: [
@@ -28,7 +28,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'gridcraft-sandbox',
-        short_name: 'play.gridbeam.xyz',
+        short_name: 'play.replimat.org',
         start_url: '/',
         background_color: '#4B2D73',
         theme_color: '#4B2D73',
@@ -36,14 +36,14 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
-    {
-      resolve: 'gatsby-plugin-matomo',
-      options: {
-        siteId: '2',
-        matomoUrl: 'https://analytics.mikey.nz',
-        siteUrl: 'https://play.gridbeam.xyz',
-      },
-    },
+    //{
+    //  resolve: 'gatsby-plugin-matomo',
+    //  options: {
+    //    siteId: '2',
+    //    matomoUrl: 'https://analytics.mikey.nz',
+    //    siteUrl: 'https://play.gridbeam.xyz',
+    //  },
+    //},
     'gatsby-plugin-typescript',
     {
       resolve: 'gatsby-plugin-eslint',

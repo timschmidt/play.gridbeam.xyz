@@ -78,7 +78,7 @@ function Footer(props: FooterProps) {
     >
       <Link
         target="_window"
-        href="https://github.com/ahdinosaur/play.gridbeam.xyz"
+        href="https://github.com/timschmidt/play.gridbeam.xyz"
         sx={{
           padding: 1,
           color: 'primary',
@@ -86,7 +86,7 @@ function Footer(props: FooterProps) {
           ':hover': { textDecoration: 'underline' },
         }}
       >
-        play.gridbeam.xyz
+        play.replimat.org
       </Link>
       made with
       <span role="img" aria-label="heart" sx={{ padding: 1 }}>
@@ -98,7 +98,7 @@ function Footer(props: FooterProps) {
         target="_window"
         sx={{
           padding: 1,
-          color: 'primary',
+          color: '#00aae0',
           textDecoration: 'none',
           ':hover': {
             textDecoration: 'underline',

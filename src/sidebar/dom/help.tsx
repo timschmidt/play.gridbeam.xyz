@@ -40,10 +40,6 @@ export function DomSidebarHelp(props: HelpProps) {
         To scale a part, select the part, then click and drag the arrows on the
         ends to change the size.
       </HelpText>
-      <HelpText>
-        The figure in the scene is a scale reference aimed to be roughly 170 cm
-        or ~5' 7''.
-      </HelpText>
       <Box
         as="dl"
         sx={{
@@ -74,8 +70,8 @@ export function DomSidebarHelp(props: HelpProps) {
       </Box>
       <HelpText>
         If you enjoyed this, please send &nbsp;
-        <a href="https://dinosaur.is" target="_window">
-          Mikey
+        <a href="https://wiki.replimat.org/wiki/User:Tim" target="_window">
+          Tim
         </a>
         &nbsp; a message!
       </HelpText>

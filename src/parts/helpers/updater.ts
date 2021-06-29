@@ -43,13 +43,20 @@ export interface ScalePartUpdate {
 const scaleUpdate: PartUpdaterForEach<ScalePartUpdate> = (part, update) => {
   let { delta, lengthDirection } = update.payload
 
+  let lengths = [2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50]
+  let longest = 2
+
   // special case: length must not go below zero
   if (part.length + delta < 1) {
     delta = -part.length + 1
   }
 
+  for (standard of lengths) {
+    if (part.length + delta >= standard) longest = standard
+  }
+
   if (lengthDirection === LengthDirection.positive) {
-    part.length += delta
+    part.length = longest
   } else if (lengthDirection === LengthDirection.negative) {
     const moveX = delta * part.direction.x
     const moveY = delta * part.direction.y
@@ -61,14 +68,14 @@ const scaleUpdate: PartUpdaterForEach<ScalePartUpdate> = (part, update) => {
       delta = part.origin.z / part.direction.z
     }
 
-    part.length += delta
+    part.length = longest
     part.origin.x -= moveX
     part.origin.y -= moveY
     part.origin.z -= moveZ
   }
 
-  // ensure length doesn't go below 1
-  if (part.length < 1) part.length = 1
+  // ensure length doesn't go below 2
+  if (part.length < 2) part.length = 2
 }
 
 export interface RotatePartUpdate {

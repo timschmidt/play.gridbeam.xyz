@@ -14,8 +14,8 @@ export function DomSidebarFeedback(props: FeedbackProps) {
       <FeedbackText>Message us with feedback at:</FeedbackText>
       <FeedbackText>
         <Obfuscate
-          email="mikey@villagekit.com"
-          headers={{ subject: 'play.gridbeam.xyz feedback' }}
+          email="tim@replimat.org"
+          headers={{ subject: 'play.replimat.org feedback' }}
         />
       </FeedbackText>
       <FeedbackText>Tell us what you love about this app.</FeedbackText>

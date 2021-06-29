@@ -24,7 +24,7 @@ export function GlArrow(props: ArrowProps) {
   const {
     direction = new Vector3(0, 0, 1),
     origin = new Vector3(0, 0, 0),
-    color = 0xffff00,
+    color = '#00aae0',
     length = 1,
     headLength = 0.2 * length,
     headWidth = 0.2 * headLength,

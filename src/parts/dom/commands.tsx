@@ -50,7 +50,7 @@ const CommandButton = (props: CommandButtonProps) => {
   return (
     <Button
       sx={{
-        backgroundColor: 'darkmagenta',
+        backgroundColor: '#00aae0',
         margin: 1,
         zIndex: 1,
       }}

@@ -54,7 +54,7 @@ function SelectBox(props: SelectBoxProps) {
       css={{
         pointerEvents: 'none',
         border: '1px solid #55aaff',
-        backgroundColor: 'rgba(75, 160, 255, 0.3)',
+        backgroundColor: 'rgba(0, 63, 16, 0.3)',
         position: 'fixed',
       }}
       style={{

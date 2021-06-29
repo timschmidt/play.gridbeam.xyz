@@ -139,7 +139,7 @@ const CloseButton = (props: CloseButtonProps) => {
       sx={{
         margin: 1,
         height: '32px',
-        backgroundColor: 'darkcyan',
+        backgroundColor: '#00aae0',
         flex: '0 1 auto',
         zIndex: 1,
       }}
@@ -157,10 +157,7 @@ interface OpenerButtonProps {
 const OpenerButton = (props: OpenerButtonProps) => {
   const { label, handleOpen } = props
   return (
-    <Button
-      onClick={handleOpen}
-      sx={{ backgroundColor: 'darkcyan', margin: 1 }}
-    >
+    <Button onClick={handleOpen} sx={{ backgroundColor: '#00aae0', margin: 1 }}>
       {label}
     </Button>
   )

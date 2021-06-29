@@ -76,8 +76,8 @@ interface BackgroundProps {
 
 function Background(props: BackgroundProps) {
   const { currentBeamWidth } = props
-  const numSmallFloorTiles = 256
-  const largeFloorTileScale = 8
+  const numSmallFloorTiles = 100
+  const largeFloorTileScale = 5
   const numLargeFloorTiles = numSmallFloorTiles / largeFloorTileScale
   const floorLength = numSmallFloorTiles * currentBeamWidth
 
@@ -104,10 +104,11 @@ function Background(props: BackgroundProps) {
           args={[floorLength, floorLength]}
         />
       </mesh>
-      <GlScaleReference />
     </Fragment>
   )
 }
+
+// removed <GlScaleReference />
 
 // https://github.com/react-spring/drei/blob/master/src/Sky.tsx
 
